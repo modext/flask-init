@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-    <title>Flask Application</title>
-</head>
-<body>
-    <h1>I wish to change these thinss</h1>
-</body>
+<html>
+  <head>
+    <title>Example Form</title>
+  </head>
+  <body>
+    <h1>Example Form</h1>
+    <form action="/submit" method="POST">
+      <label for="science">Science:</label>
+      <input type="text" name="science" id="science"><br><br>
+      
+      <label for="math">Math:</label>
+      <input type="text" name="math" id="math"><br><br>
+      
+      <label for="english">English:</label>
+      <input type="text" name="english" id="english"><br><br>
+      
+      <label for="programming">Programming:</label>
+      <input type="text" name="programming" id="programming"><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>

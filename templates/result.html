@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <title>Flask Application</title>
 </head>
+<h2>Final  Results</h2>
 <body>
-    <h1>so much for the score</h1>
+
+    {% if result>=50 %} 
+    <p2>Wow!  you passed </p2>
+    {%else%}
+    <p2>Chai! you failed </p2>
+    {%endif%}
 </body>
 </html>
